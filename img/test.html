@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="test.css"> 
+</head>
+<body>
+	<div id="formatted_data">
+			<script>
+           $.get("https://min-api.cryptocompare.com/data/price?fsym=ETH&tsyms=BTC,USD,EUR", function(data) {
+               $("#formatted_data").append("BTC " + data.BTC).append( "USD: " + data.USD );
+               // alert( "Data Loaded: " + data );
+               //.append( "USD: " + data.USD );
+           }, "json" );   
+			</script>
+			</div>
+</body>
+</html>
+
