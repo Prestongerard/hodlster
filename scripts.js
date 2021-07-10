@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 $(document).ready(function () {
 	var DOM = {}
 	DOM.pullTest = $("#box-price-eth-usd");
@@ -68,4 +69,32 @@ $(document).ready(function () {
 	});
 });
 
+=======
+$(document).ready(function(){
+	$.get("https://min-api.cryptocompare.com/data/price?fsym=ETH&tsyms=BTC,USD,EUR", function(data) {
+			$("test").append("BTC " + data.BTC)
+			alert( "Data Loaded: " + data );
+               //.append( "USD: " + data.time );
+           }, "json" );  
+	$("pop-up-settings").hide();
+	$("#hamburger").click(function(){  
+		console.log('click');
+	});
+	$("#slider0").click(function(){  
+		console.log('click');
+	});
+	$(".hamburger-wrapper").click( function() {
+		$(".hamburger").toggleClass("close");
+		console.log('click');
+	});
+	$.get("https://min-api.cryptocompare.com/data/price?fsym=ETH&tsyms=BTC,USD,EUR", function(data) {
+			$("test").append("BTC " + data.BTC);
+			alert( "Data Loaded: " + data );
+               //.append( "USD: " + data.time );
+           }, "json" );  
+
+	//	$(".pop-up-settings").fadeIn();
+});
+//https://min-api.cryptocompare.com/
+>>>>>>> 64daa9f4e066065532ef57680815e9d1869234b4
 
