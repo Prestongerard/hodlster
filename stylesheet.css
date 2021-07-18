@@ -11,7 +11,7 @@ body {
 	font-family: 'Nunito Semibold';
 }
 
-#nav {
+/* #nav {
 	top: 0;
 	left: 0;
 	display: inline-block;
@@ -25,106 +25,11 @@ body {
 	background: #DEE5E5;
 	border: solid black 1px;
 	display: inline-block;
-}
+} */
 
-
-#slider0 {
-	width: 50px;
-	height: 50px;
-	float: left;
-	cursor: pointer;
-	/* net ninja tutorial 6 */
-}
-#slider1 {
-	width: 50px;
-	height: 50px;
-	float: left;
-	cursor: pointer;
-	/* net ninja tutorial 6 */
-}
-
-#slider2 {
-	width: 50px;
-	height: 50px;
-	float: left;
-	cursor: pointer;
-	/* net ninja tutorial 6 */
-}
-
-#heading {
-	cursor: pointer;
-	text-align: center;
-}
-
-#hamburger-wrapper {
-	right: 0;
-	top: 0;
-	bottom: 0;
-	width: 50px;
-	height: 50px;
-	display:inline-block;
-	position: absolute;
-	cursor: pointer;
-}
-
-#line {
-	position: relative;
-	height: 2px;
-	width:100%;
-	padding: 3px;
-	color: black;
-	border-radius:2px;
-	transition: all cubic-bezier(0.25, 0.1, 0.28, 1.54) 0.32s;
-}
-.line01 {
-	top:19%;
-}
-
-.line02 {
-	top:49%;
-}
-
-.line03 {
-	top:79%;
-}
 #pop-up-settings {
 	display: none;
 }
 
-<<<<<<< HEAD
- /* #content { 
-=======
-#content {
->>>>>>> 64daa9f4e066065532ef57680815e9d1869234b4
-	display: grid;
-	grid-template-columns: 1fr 2fr 3fr 2fr 1fr 1fr 1fr 1fr 1fr 1fr;
-	grid-template-rows: repeat(100, minmax(100px, auto));
-	grid-row-gap: 5px;
-<<<<<<< HEAD
-	grid-template-colums: repeat(9,1fr);   
-	max-width: 960px;
-	margin: 120px auto;
-} */
-=======
-	/*grid-template-colums: repeat(9,1fr);   */
-	max-width: 960px;
-	margin: 120px auto;
-}
->>>>>>> 64daa9f4e066065532ef57680815e9d1869234b4
-
-#content div {
-	background: #CECECE;
-	padding: 30px;
-}
-
-#content div:nth-child(even){
-	background: #E0E8DF;
-}
-
-#test {
-
-}
 
 
-
-/*traders desk - net ninja css grid tutorial 7 */

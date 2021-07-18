@@ -1,13 +1,20 @@
-<<<<<<< HEAD
 <!DOCTYPE html>
 <html>
 
 <head>
-	<title>Hodl your biscuits | hodlster.com</title>
+	<title>Hodl your biscuits | Hodlster</title>
 	<link rel="stylesheet" type="text/css" href="stylesheet.css">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 	<script type="text/javascript" src="scripts.js"></script>
 	<link rel="stylesheet" type="text/css" href="stylesheet.css">
+	<!-- Data Tables -->
+	<link rel="stylesheet" type="text/css"
+		href="https://cdn.datatables.net/v/bs5/jszip-2.5.0/dt-1.10.25/af-2.3.7/b-1.7.1/b-colvis-1.7.1/b-html5-1.7.1/b-print-1.7.1/cr-1.5.4/date-1.1.0/fc-3.3.3/fh-3.1.9/kt-2.6.2/r-2.2.9/rg-1.1.3/rr-1.2.8/sc-2.0.4/sb-1.1.0/sp-1.3.0/sl-1.3.3/datatables.min.css" />
+
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/pdfmake/0.1.36/pdfmake.min.js"></script>
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/pdfmake/0.1.36/vfs_fonts.js"></script>
+	<script type="text/javascript"
+		src="https://cdn.datatables.net/v/bs5/jszip-2.5.0/dt-1.10.25/af-2.3.7/b-1.7.1/b-colvis-1.7.1/b-html5-1.7.1/b-print-1.7.1/cr-1.5.4/date-1.1.0/fc-3.3.3/fh-3.1.9/kt-2.6.2/r-2.2.9/rg-1.1.3/rr-1.2.8/sc-2.0.4/sb-1.1.0/sp-1.3.0/sl-1.3.3/datatables.min.js"></script>
 	<!-- CSS only -->
 	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
 		integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
@@ -18,7 +25,7 @@
 </head>
 
 <body>
-	<nav class="navbar navbar-expand-md navbar-dark bg-dark mb-4">
+	<nav class="navbar navbar-expand-md navbar-light bg-light mb-4">
 		<div class="container-fluid">
 			<a class="navbar-brand" href="#">Hodlster</a>
 			<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse"
@@ -26,7 +33,7 @@
 				<span class="navbar-toggler-icon"></span>
 			</button>
 			<div class="collapse navbar-collapse" id="navbarCollapse">
-				<ul class="navbar-nav me-auto mb-2 mb-md-0">
+				<!-- <ul class="navbar-nav me-auto mb-2 mb-md-0">
 					<li class="nav-item">
 						<a class="nav-link active" aria-current="page" href="#">Home</a>
 					</li>
@@ -36,16 +43,22 @@
 					<li class="nav-item">
 						<a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
 					</li>
-				</ul>
-				<form class="d-flex">
-					<input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-					<button class="btn btn-outline-success" type="submit">Search</button>
-				</form>
+				</ul> -->
+				<svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor"
+					class="bi bi-grid-1x2-fill" viewBox="0 0 16 16">
+					<!--<i class="bi bi-grid-1x2-fill"></i>-->
+					<path
+						d="M0 1a1 1 0 0 1 1-1h5a1 1 0 0 1 1 1v14a1 1 0 0 1-1 1H1a1 1 0 0 1-1-1V1zm9 0a1 1 0 0 1 1-1h5a1 1 0 0 1 1 1v5a1 1 0 0 1-1 1h-5a1 1 0 0 1-1-1V1zm0 9a1 1 0 0 1 1-1h5a1 1 0 0 1 1 1v5a1 1 0 0 1-1 1h-5a1 1 0 0 1-1-1v-5z" />
+				</svg>
 			</div>
 		</div>
 	</nav>
-
 	<main class="container">
+		<div id="pop-up-settings"></div>
+		<form class="d-flex">
+			<input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+			<button class="btn btn-outline-success" class="float-right" type="submit">Search</button>
+		</form>
 		<div class="row">
 			row
 			<div class="col-1">Name</div>
@@ -58,140 +71,64 @@
 			<div class="col-1">8</div>
 			<div class="col-1">Graph</div>
 			<div class="col-1">10</div>
-		<div class="row">
-			row
-			<div class="col-1"></p>1</div>
-			<div class="col-1"><p id="box-price-eth-usd" class="text-primary"></p></div>
-			<div class="col-1 text-secondary">3</div>
-			<div class="col-1 text-danger">4</div>
-			<div class="col-1 text-info">5</div>
-			<div class="col-1 text-warning">6</div>
-			<div class="col-1"><p id="box-price-all-usd" class="text-primary"></p></div>
-			<div class="col-1">8</div>
-			<div class="col-1">9</div>
-			<div class="col-1">10</div>
-		</div>
-		<div class="row">
-			row
-			<div class="col-1">1</div>
-			<div class="col-1">2</div>
-			<div class="col-1">3</div>
-			<div class="col-1">4</div>
-			<div class="col-1">5</div>
-			<div class="col-1">6</div>
-			<div class="col-1">7</div>
-			<div class="col-1">8</div>
-			<div class="col-1">9</div>
-			<div class="col-1">10</div>
-		</div>
-		<div class="row">
-			row
-			<div class="col-1">1</div>
-			<div class="col-1">2</div>
-			<div class="col-1">3</div>
-			<div class="col-1">4</div>
-			<div class="col-1">5</div>
-			<div class="col-1">6</div>
-			<div class="col-1">7</div>
-			<div class="col-1">8</div>
-			<div class="col-1">9</div>
-			<div class="col-1">10</div>
-		</div>
-		<div class="row">
-			row
-			<div class="col-1">1</div>
-			<div class="col-1">2</div>
-			<div class="col-1">3</div>
-			<div class="col-1">4</div>
-			<div class="col-1">5</div>
-			<div class="col-1">6</div>
-			<div class="col-1">7</div>
-			<div class="col-1">8</div>
-			<div class="col-1">9</div>
-			<div class="col-1">10</div>
-		</div>
+			<div class="row">
+				row
+				<div class="col-1">
+					</p>1</div>
+				<div class="col-1">
+					<p id="box-price-eth-usd" class="text-primary"></p>
+				</div>
+				<div class="col-1 text-secondary">3</div>
+				<div class="col-1 text-danger">4</div>
+				<div class="col-1 text-info">5</div>
+				<div class="col-1 text-warning">6</div>
+				<div class="col-1">
+					<p id="box-price-all-usd" class="text-primary"></p>
+				</div>
+				<div class="col-1">8</div>
+				<div class="col-1">9</div>
+				<div class="col-1">10</div>
+			</div>
+			<div class="row">
+				row
+				<div class="col-1">1</div>
+				<div class="col-1">2</div>
+				<div class="col-1">3</div>
+				<div class="col-1">4</div>
+				<div class="col-1">5</div>
+				<div class="col-1">6</div>
+				<div class="col-1">7</div>
+				<div class="col-1">8</div>
+				<div class="col-1">9</div>
+				<div class="col-1">10</div>
+			</div>
+			<div class="row">
+				row
+				<div class="col-1">1</div>
+				<div class="col-1">2</div>
+				<div class="col-1">3</div>
+				<div class="col-1">4</div>
+				<div class="col-1">5</div>
+				<div class="col-1">6</div>
+				<div class="col-1">7</div>
+				<div class="col-1">8</div>
+				<div class="col-1">9</div>
+				<div class="col-1">10</div>
+			</div>
+			<div class="row">
+				row
+				<div class="col-1">1</div>
+				<div class="col-1">2</div>
+				<div class="col-1">3</div>
+				<div class="col-1">4</div>
+				<div class="col-1">5</div>
+				<div class="col-1">6</div>
+				<div class="col-1">7</div>
+				<div class="col-1">8</div>
+				<div class="col-1">9</div>
+				<div class="col-1">10</div>
+			</div>
 	</main>
-
 </body>
 
-<!-- <body>
-=======
-
-<!DOCTYPE html>
-<html>
-<head>
-	<title>Hodl your biscuits | hodlster.com</title>
-	<link rel="stylesheet" type="text/css" href="stylesheet.css"> 
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-	<script type="text/javascript" src="scripts.js"></script>
-	<link rel="stylesheet" type="text/css" href="stylesheet.css"> 
-</head>
-<body>
->>>>>>> 64daa9f4e066065532ef57680815e9d1869234b4
-	<div id="wrapper">
-		<div id="nav">
-			<div id="slider0">slider0</div> 
-			<div id="slider1">slider1</div> 
-			<div id="slider2">slider2</div> 
-			<div id="heading">hodlster</div>
-			<div id="hamburger-wrapper">
-				<div class="line line01"></div>
-				<div class="line line02"></div>
-				<div class="line line03"></div>
-			</div>
-			<div id="pop-up-settings"></div>
-		</div>
-		<div id="content">	
-<<<<<<< HEAD
-			<div>
-				<pre id="pull-test"></pre>
-			</div>
-			<div id = "test">test</div>
-=======
-			<div id = "test"></div>
->>>>>>> 64daa9f4e066065532ef57680815e9d1869234b4
-			<div>btc-2</div>
-			<div>btc-3</div>
-			<div>eth-4</div>
-			<div>eth-5</div>
-			<div>eth-6</div>
-			<div>xrp-7</div>
-			<div>xrp-8</div>
-			<div>xrp-9</div>
-			<div>iota-10</div>
-			<div>iota-11</div>
-			<div>iota-12</div>
-			<div>coin-12</div>
-			<div>coin-13</div>
-			<div>coin-14</div>
-			<div>coin-15</div>
-			<div>coin-16</div>
-			<div>coin-17</div>
-			<div>coin-18</div>
-			<div>coin-19</div>
-			<div>coin-20</div>
-			<div>coin-21</div>
-			<div>coin-22</div>
-			<div>coin-23</div>
-			<div>coin-24</div>
-			<div>coin-25</div>
-			<div>coin-26</div>
-			<div>coin-27</div>
-			<div>coin-28</div>
-			<div>coin-29</div>
-			<div>coin-30</div>
-			<div>coin-32</div>
-			<div>coin-33</div>
-			<div>coin-34</div>
-			<div>coin-35</div>
-			<div>coin-36</div>
-		</div>
-<<<<<<< HEAD
-	</div> 
-</body>  -->
-
-=======
-	</div>
-</body>
->>>>>>> 64daa9f4e066065532ef57680815e9d1869234b4
 </html>
